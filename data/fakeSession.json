@@ -1,0 +1,30 @@
+{
+  "sessionId": "demo-001",
+  "title": "demo data",
+  "speakers": [
+    { "id": "s1", "name": "Thundercat" },
+    { "id": "s2", "name": "Bartholomew" },
+    { "id": "s3", "name": "Quokka" },
+    { "id": "s4", "name": "Pancake" },
+    { "id": "s5", "name": "Sir" },
+    { "id": "s6", "name": "Duchess" },
+    { "id": "s7", "name": "Chaos" }
+  ],
+  "utterances": [
+    { "speakerId": "s1", "start": 0,   "end": 45,  "interruptedBy": "s4" },
+    { "speakerId": "s4", "start": 40,  "end": 85,  "interruptedBy": "s1" },
+    { "speakerId": "s1", "start": 80,  "end": 120, "interruptedBy": "s2" },
+    { "speakerId": "s2", "start": 115, "end": 130, "interruptedBy": "s4" },
+    { "speakerId": "s4", "start": 128, "end": 175, "interruptedBy": "s3" },
+    { "speakerId": "s3", "start": 170, "end": 185, "interruptedBy": "s1" },
+    { "speakerId": "s1", "start": 180, "end": 230, "interruptedBy": "s5" },
+    { "speakerId": "s5", "start": 228, "end": 235, "interruptedBy": null },
+    { "speakerId": "s4", "start": 235, "end": 290, "interruptedBy": "s7" },
+    { "speakerId": "s7", "start": 285, "end": 305, "interruptedBy": "s1" },
+    { "speakerId": "s1", "start": 300, "end": 350, "interruptedBy": "s6" },
+    { "speakerId": "s6", "start": 348, "end": 355, "interruptedBy": null },
+    { "speakerId": "s4", "start": 355, "end": 410, "interruptedBy": "s2" },
+    { "speakerId": "s2", "start": 405, "end": 425, "interruptedBy": "s1" },
+    { "speakerId": "s1", "start": 420, "end": 480, "interruptedBy": null }
+  ]
+}

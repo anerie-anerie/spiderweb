@@ -1,0 +1,123 @@
+:root {
+  --bg: #0b0e1a;
+  --panel: #141a2e;
+  --line: #232b46;
+  --text: #eef1f7;
+  --text-dim: #8b93ad;
+  --spidey-red: #e23636;
+  --spidey-blue: #1b3f8b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 420px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+#recordBtn {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--spidey-red);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#recordBtn.active {
+  background: var(--spidey-red);
+  color: var(--bg);
+  border-color: var(--spidey-red);
+}
+
+main {
+  padding: 6px 0 0;
+}
+
+#graph {
+  width: 100%;
+  height: 340px;
+  display: block;
+}
+
+.node circle {
+  stroke: var(--bg);
+  stroke-width: 2px;
+}
+
+.node text {
+  fill: var(--text);
+  font-size: 11px;
+  pointer-events: none;
+}
+
+.link {
+  stroke: var(--spidey-red);
+  stroke-opacity: 0.6;
+  stroke-dasharray: 1 4; /* thin dotted strand, reads as a web thread rather than a wire */
+  fill: none;
+}
+
+.link-arrow {
+  fill: var(--spidey-red);
+  opacity: 0.8;
+}
+
+footer#talkTimeBar {
+  padding: 10px 16px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.talk-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.talk-row .name {
+  width: 60px;
+  flex-shrink: 0;
+  color: var(--text);
+}
+
+.talk-row .bar-track {
+  flex: 1;
+  height: 6px;
+  background: var(--panel);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.talk-row .bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--spidey-blue);
+}
+
+.talk-row .seconds {
+  width: 34px;
+  text-align: right;
+  flex-shrink: 0;
+}
